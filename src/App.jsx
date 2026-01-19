@@ -56,7 +56,7 @@ function App() {
             <ParticleBackground />
 
             {/* Main Content Container */}
-            <div className="relative z-10 max-w-[480px] mx-auto min-h-screen flex flex-col">
+            <div className="relative z-10 max-w-[480px] mx-auto min-h-screen flex flex-col py-12">
                 {/* Header Section */}
                 <Header />
 

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Activity } from 'lucide-react'
 import { useSound } from '../hooks/useSound'
 
 const links = [
@@ -16,6 +17,14 @@ const links = [
         main: 'RECEIVE TRANSMISSION',
         sub: 'Stream the Latest Signal',
         href: 'https://lnk.to/GuidedByTheAngels',
+        isHero: false,
+    },
+    {
+        id: 'signallab',
+        icon: <Activity size={24} className="text-white/80" />,
+        main: 'ACCESS SIGNAL LAB',
+        sub: 'Experimental Audio/Visual Archives',
+        href: 'https://alpheratz-signal-lab.vercel.app/',
         isHero: false,
     },
     {
