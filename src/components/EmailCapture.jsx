@@ -55,7 +55,7 @@ const EmailCapture = () => {
 
             {/* Footer signature */}
             <p className="text-center text-[10px] text-white/20 mt-6 font-manrope tracking-wider">
-                © 2024 ALPHERATZ TECHNOLOGIES
+                © 2026 ALPHERATZ TECHNOLOGIES
             </p>
         </motion.footer>
     )
