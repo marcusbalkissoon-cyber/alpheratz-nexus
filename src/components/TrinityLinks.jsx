@@ -16,7 +16,7 @@ const links = [
         icon: '📡',
         main: 'RECEIVE TRANSMISSION',
         sub: 'Stream the Latest Signal',
-        href: 'https://lnk.to/GuidedByTheAngels',
+        href: 'https://bio.to/fight-for-my-spirit',
         isHero: false,
     },
     {
