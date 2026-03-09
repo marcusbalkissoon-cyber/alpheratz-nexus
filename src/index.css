@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500;700&family=Manrope:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -20,61 +20,39 @@ body,
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
-  background-color: #050505;
-  color: #ffffff;
+  font-family: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  background-color: #000000;
+  color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Glassmorphism utility */
-.glass-card {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-/* Glow effect for hero button */
-@keyframes pulse-glow {
+/* Base Terminal Animations */
+@keyframes neon-pulse {
 
   0%,
   100% {
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.15), 0 0 40px rgba(255, 215, 0, 0.05);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
   }
 
   50% {
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.25), 0 0 60px rgba(255, 215, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
   }
 }
 
-.hero-glow {
-  animation: pulse-glow 3s ease-in-out infinite;
+.terminal-box {
+  background: transparent;
+  border: 1px solid #333;
+  transition: all 0.2s ease;
 }
 
-/* Status dot pulse */
-@keyframes status-pulse {
-
-  0%,
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  50% {
-    opacity: 0.6;
-    transform: scale(1.2);
-  }
+.terminal-box:hover {
+  border-color: #00F0FF;
+  animation: neon-pulse 2s infinite ease-in-out;
 }
 
-.status-pulse {
-  animation: status-pulse 2s ease-in-out infinite;
-}
-
-/* Particle styling */
-.particle {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  pointer-events: none;
+/* Custom Selection */
+::selection {
+  background: #00F0FF;
+  color: #000000;
 }

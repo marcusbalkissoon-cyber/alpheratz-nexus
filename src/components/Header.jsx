@@ -3,18 +3,17 @@ import { motion } from 'framer-motion'
 const Header = () => {
     return (
         <motion.header
-            className="flex flex-col items-center text-center pt-12 pb-8"
+            className="flex flex-col items-center text-center pt-16 pb-12 w-full"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-            {/* Avatar Container */}
-            <div className="relative w-28 h-28 mb-6">
-                <div className="w-full h-full rounded-full overflow-hidden border-2 border-white/10 glass-card">
-                    {/* Video/Image placeholder - will use avatar.mp4 or avatar.jpg */}
+            {/* Hologram Avatar Container */}
+            <div className="relative w-32 h-32 mb-8">
+                <div className="w-full h-full rounded-full overflow-hidden border border-cyan shadow-[0_0_15px_rgba(0,240,255,0.4)] bg-oled">
                     <video
                         src="/avatar.mp4"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover opacity-90 mix-blend-screen"
                         autoPlay
                         loop
                         muted
@@ -22,26 +21,23 @@ const Header = () => {
                         poster="/avatar.jpg"
                     />
                 </div>
-                {/* Decorative ring */}
-                <div className="absolute inset-0 rounded-full border border-white/5 scale-110" />
             </div>
 
             {/* Status Indicator */}
-            <div className="flex items-center gap-2 mb-4">
-                <span className="w-2 h-2 bg-green-400 rounded-full status-pulse" />
-                <span className="text-xs font-manrope text-white/60 tracking-[0.2em] uppercase">
-                    Signal: Strong
-                </span>
+            <div className="flex items-center gap-3 mb-6 border border-gray-800 px-4 py-1.5 bg-oled/50 shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+                <span className="text-xs text-gray-900 tracking-widest">[ SYSTEM:</span>
+                <span className="text-xs text-cyan tracking-widest">ONLINE ]</span>
+                <span className="w-1.5 h-1.5 bg-cyan rounded-full animate-pulse shadow-[0_0_8px_rgba(0,240,255,1)] ml-1" />
             </div>
 
-            {/* Name */}
-            <h1 className="font-rajdhani font-bold text-3xl tracking-[0.15em] uppercase mb-2">
-                Markus Cole
+            {/* Identity */}
+            <h1 className="font-bold text-2xl tracking-[0.2em] text-white uppercase mb-4 drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">
+                MARKUS COLE
             </h1>
 
             {/* Title */}
-            <p className="font-manrope text-sm text-white/50 tracking-wide">
-                Sonic Architect // Alpheratz Technologies
+            <p className="text-xs text-gray-900 tracking-[0.15em] uppercase border-b border-gray-800 pb-2 inline-block">
+                Sonic Architect <span className="text-cyan mx-2">//</span> Alpheratz Technologies
             </p>
         </motion.header>
     )

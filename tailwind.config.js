@@ -7,12 +7,15 @@ export default {
     theme: {
         extend: {
             colors: {
-                obsidian: '#050505',
-                gold: '#FFD700',
+                oled: '#000000',
+                cyan: '#00F0FF',
+                gray: {
+                    800: '#1a1a1a',
+                    900: '#888888',
+                }
             },
             fontFamily: {
-                rajdhani: ['Rajdhani', 'sans-serif'],
-                manrope: ['Manrope', 'sans-serif'],
+                mono: ['Space Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
             },
         },
     },
