@@ -1,4 +1,5 @@
 import Header from './components/Header'
+import AirlockTerminal from './components/AirlockTerminal'
 import EmailCapture from './components/EmailCapture'
 import Recalibration from './components/Recalibration'
 import MediaArchives from './components/MediaArchives'
@@ -20,6 +21,11 @@ function App() {
                   BLOCK 1: The Identity & Status Header 
                 */}
                 <Header />
+
+                {/* 
+                  BLOCK 1.5: Airlock Terminal
+                */}
+                <AirlockTerminal />
 
                 {/* 
                   BLOCK 2: Formspree Email Capture (TOP PRIORITY)

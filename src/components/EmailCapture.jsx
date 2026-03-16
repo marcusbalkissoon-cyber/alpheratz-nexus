@@ -18,7 +18,7 @@ const EmailCapture = () => {
                     [ SECURE COMMS CHANNEL ]
                 </h2>
                 <p className="text-gray-900 text-xs tracking-wider leading-relaxed">
-                    The grid is loud. Secure your comms link for priority access to the ZERO-POINT PROTOCOL—an upcoming offline digital sanctuary designed to physically recalibrate your nervous system.
+                    The grid is loud. Secure your comms link to receive your decryption cipher for the ZERO-POINT PROTOCOL—an offline digital sanctuary designed to physically recalibrate your nervous system.
                 </p>
             </div>
 
